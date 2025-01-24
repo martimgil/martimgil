@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 
-<p>I am in the first year of a degree in computer engineering at the University of Aveiro.</p>
+<p>I am in the first year of a degree in software engineering at the University of Aveiro.</p>
 <table style="border: none; border-collapse: collapse;">
   <tr>
     <td>
