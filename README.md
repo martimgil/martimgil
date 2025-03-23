@@ -9,8 +9,6 @@
     </td>
     <td>
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=martimgil&layout=donut"></img>
-
     </td>
   </tr>
-
 </table>
