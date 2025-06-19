@@ -38,9 +38,6 @@
   <a href="https://getbootstrap.com/" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="40" height="40"/>
   </a>
-  <a href="https://daisyui.com/" target="_blank">
-    <img src="https://img.shields.io/badge/DaisyUI-%23F4F4F5?style=flat&logo=tailwind-css&logoColor=000000" alt="DaisyUI" height="40"/>
-  </a>
   <a href="https://tailwindcss.com/" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" width="40" height="40"/>
   </a>
