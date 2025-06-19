@@ -2,7 +2,7 @@
 
 
 <p>I am in the first year of a degree in software engineering at the University of Aveiro.</p>
-🧰 Languages and Tools
+### 🧰 Languages and Tools
 
 <p align="left">
   <a href="https://www.python.org/" target="_blank">
