@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 
-<p>I am in the first year of a degree in software engineering at the University of Aveiro.</p>
+<p>I am in the second year of a degree in software engineering at the University of Aveiro.</p>
 
 ### **🧰 Languages and Tools**
 
