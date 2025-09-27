@@ -65,7 +65,7 @@
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=martimgil&theme=vue-dark&hide_border=true"></img>
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=martimgil&theme=vue-dark&show_icons=true&hide_border=true&layout=compact"></td>img>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=martimgil&theme=vue-dark&show_icons=true&hide_border=true&layout=compact"></img>
     </td>
   </tr>
 </table>
