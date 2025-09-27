@@ -59,10 +59,13 @@
 <table style="border: none; border-collapse: collapse;">
   <tr>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=martimgil&show_icons=true"><img>
+      <img src="https://github-readme-stats.vercel.app/api?username=martimgil&theme=vue-dark&show_icons=true&hide_border=true&count_private=true"><img>
     </td>
     <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=martimgil&layout=donut"></img>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=martimgil&theme=vue-dark&hide_border=true"></img>
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=martimgil&theme=vue-dark&show_icons=true&hide_border=true&layout=compact"></td>img>
     </td>
   </tr>
 </table>
