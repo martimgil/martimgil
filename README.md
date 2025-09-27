@@ -66,8 +66,6 @@
     </td>
   </tr>
   <tr>
-  
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=martimgil&theme=vue-dark&hide_border=true"></img>
-      
   </tr>
 </table>
