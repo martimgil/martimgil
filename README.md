@@ -46,12 +46,9 @@
   ### 📊 Stats
 
   <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=martimgil&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" height="180" alt="stats graph" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=martimgil&layout=compact&langs_count=10&theme=tokyonight&hide_border=true" height="180" alt="languages graph" />
+    <img src="https://github.com/martimgil/martimgil/blob/main/github-metrics.svg" alt="Metrics" width="100%">
   </div>
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=martimgil&theme=tokyonight&hide_border=true" alt="streak graph" />
-
+  
   ---
 
   ### ✉️ Contacts
