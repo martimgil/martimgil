@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="163.3916536364123" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="163.3916536364123" y="0" width="122.01485675250122" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="285.40651038891355" y="0" width="60.91365267429814" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="346.3201630632117" y="0" width="57.46616645885355" height="8" fill="#555555"/>
-                    <rect mask="url(#languages-bar)" x="403.7863295220652" y="0" width="27.666236581152518" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="431.45256610321775" y="0" width="12.843861794472383" height="8" fill="#e38c00"/>
-                    <rect mask="url(#languages-bar)" x="444.29642789769014" y="0" width="10.69976093819704" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="454.99618883588715" y="0" width="5.003811164112862" height="8" fill="#3D6117"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="163.35336930146067" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="163.35336930146067" y="0" width="121.98626742409293" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="285.3396367255536" y="0" width="60.899379982699735" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="346.23901670825336" y="0" width="57.560484251529374" height="8" fill="#555555"/>
+                    <rect mask="url(#languages-bar)" x="403.79950095978273" y="0" width="27.659754099063928" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="431.4592550588466" y="0" width="12.840852346339215" height="8" fill="#e38c00"/>
+                    <rect mask="url(#languages-bar)" x="444.3001074051859" y="0" width="10.69725387481563" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="454.99736128000154" y="0" width="5.002638719998503" height="8" fill="#3D6117"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -40,7 +40,7 @@
                                 HTML
                             </div>
                             <small>
-                                <div>35.52%</div>
+                                <div>35.51%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -97,7 +97,7 @@
                                 C
                             </div>
                             <small>
-                                <div>12.49%</div>
+                                <div>12.51%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -146,7 +146,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.788 2.788 0 01-1.436-.874A3.21 3.21 0 003 10c0 2.53 2.164 4.5 4.998 4.5zM9.533.753C9.496.34 9.16.009 8.77.146 7.035.75 4.34 3.187 5.997 6.5c.344.689.285 1.218.003 1.5-.419.419-1.54.487-2.04-.832-.173-.454-.659-.762-1.035-.454C2.036 7.44 1.5 8.702 1.5 10c0 3.512 2.998 6 6.498 6s6.5-2.5 6.5-6c0-2.137-1.128-3.26-2.312-4.438-1.19-1.184-2.436-2.425-2.653-4.81z"/>
                             </svg>
-                            Current streak 13 days
+                            Current streak 14 days
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1164,6 +1164,11 @@
                                 <path fill="#40c463" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.68 1.7,3.68 z"/>
                             </g>
                             <g transform="translate(-3.4, 7.28)">
+                                <path fill="#9be9a8" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.7199999999999998 0,1.72 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.72 1.7,2.7199999999999998 z"/>
+                            </g>
+                            <g transform="translate(-5.1, 8.280000000000001)">
                                 <path fill="#9be9a8" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
                                 <path fill="#9be9a8" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.7199999999999998 0,1.72 z"/>
                                 <path fill="#9be9a8" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.72 1.7,2.7199999999999998 z"/>
