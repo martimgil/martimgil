@@ -1,8 +1,9 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}]
-  workflow_dispatch:
+  schedule: [{cron: "0 0 * * *"}] # Atualiza todos os dias à meia-noite
+  workflow_dispatch:              # Permite correr manualmente
   push: {branches: ["master", "main"]}
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -11,21 +12,42 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # --- CONFIGURAÇÃO BÁSICA ---
           token: ${{ secrets.METRICS_TOKEN }}
-
           user: martimgil
           template: classic
           config_timezone: Europe/Lisbon
-          
           commits_authoring: martimgil@ua.pt, a.martimgil@gmail.com
           
-          base: ""
+          # Ativa o cabeçalho (estrelas, seguidores, forks e commits totais)
+          base: header, activity, community, repositories, metadata
           
+          # --- LINGUAGENS ---
           plugin_languages: yes
-          plugin_languages_limit: 8
+          plugin_languages_limit: 15            # Mostra as 15 linguagens mais usadas
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
+          plugin_languages_indepth: yes         # Estatísticas mais profundas
           
-          # --- GRÁFICO 3D ---
+          # --- GRÁFICO 3D (ISOCALENDAR) ---
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+
+          # --- HÁBITOS DE PROGRAMAÇÃO ---
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          
+          # --- LINHAS DE CÓDIGO ---
+          plugin_lines: yes
+          plugin_lines_sections: base
+
+          # --- CONQUISTAS E MEDALHAS ---
+          plugin_achievements: yes
+          plugin_achievements_display: compact # Compacto para não ocupar demasiado espaço
+          plugin_achievements_secrets: yes   # Mostra conquistas raras/secretas
+
+          # --- TÓPICOS E SKILLS ---
+          plugin_topics: yes
+          plugin_topics_limit: 12
+          plugin_topics_mode: icons           # Mostra ícones das tecnologias se disponíveis
