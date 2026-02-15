@@ -1,7 +1,7 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}] # Atualiza todos os dias à meia-noite
-  workflow_dispatch:              # Permite correr manualmente
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
   push: {branches: ["master", "main"]}
 
 jobs:
@@ -12,42 +12,37 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # --- CONFIGURAÇÃO BÁSICA ---
           token: ${{ secrets.METRICS_TOKEN }}
           user: martimgil
           template: classic
           config_timezone: Europe/Lisbon
           commits_authoring: martimgil@ua.pt, a.martimgil@gmail.com
           
-          # Ativa o cabeçalho (estrelas, seguidores, forks e commits totais)
-          base: header, activity, community, repositories, metadata
+          # Removemos 'metadata' para tirar a foto e simplificamos para esconder zeros
+          base: header, activity, community, repositories
           
-          # --- LINGUAGENS ---
+          # --- LINGUAGENS  ---
           plugin_languages: yes
-          plugin_languages_limit: 15            # Mostra as 15 linguagens mais usadas
+          plugin_languages_limit: 10
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_indepth: yes         # Estatísticas mais profundas
+          plugin_languages_ignored: html, css, tex, shader
           
-          # --- GRÁFICO 3D (ISOCALENDAR) ---
+          # --- GRÁFICO 3D ---
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-          # --- HÁBITOS DE PROGRAMAÇÃO ---
+          # --- HÁBITOS ---
           plugin_habits: yes
           plugin_habits_facts: yes
-          plugin_habits_charts: yes
+          plugin_habits_charts: no 
           
           # --- LINHAS DE CÓDIGO ---
           plugin_lines: yes
-          plugin_lines_sections: base
 
-          # --- CONQUISTAS E MEDALHAS ---
+          # --- CONQUISTAS ---
           plugin_achievements: yes
-          plugin_achievements_display: compact # Compacto para não ocupar demasiado espaço
-          plugin_achievements_secrets: yes   # Mostra conquistas raras/secretas
+          plugin_achievements_display: compact
 
-          # --- TÓPICOS E SKILLS ---
-          plugin_topics: yes
-          plugin_topics_limit: 12
-          plugin_topics_mode: icons           # Mostra ícones das tecnologias se disponíveis
+          # --- PERFORMANCE ---
+          config_import_timeout: 30
