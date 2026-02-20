@@ -18,6 +18,7 @@ jobs:
           config_timezone: Europe/Lisbon
           commits_authoring: martimgil@ua.pt, a.martimgil@gmail.com
           
+          # Removemos 'metadata' para tirar a foto e simplificamos para esconder zeros
           base: header, activity, community, repositories
           
           # --- LINGUAGENS  ---
@@ -31,10 +32,16 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
+          # --- PREVENÇÃO DE ERROS E TIMEOUTS ---
+          retries: 3
+          retries_delay: 300
+
           # --- HÁBITOS ---
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: no 
+          plugin_habits_days: 14
+          plugin_habits_from: 200
           
           # --- LINHAS DE CÓDIGO ---
           plugin_lines: yes
@@ -42,3 +49,4 @@ jobs:
           # --- CONQUISTAS ---
           plugin_achievements: yes
           plugin_achievements_display: compact
+          plugin_achievements_ignored: manager
