@@ -12,27 +12,31 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # Configurações de Autenticação
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }} # Usa o token padrão para o commit
+
+          # Configurações Gerais
           user: martimgil
           template: classic
+          base: header, activity, community, repositories
           config_timezone: Europe/Lisbon
+          filename: github-metrics.svg # Define o nome do ficheiro explicitamente
+
+          # Commits
           commits_authoring: martimgil@ua.pt, a.martimgil@gmail.com
           
-          # Removemos 'metadata' para tirar a foto e simplificamos para esconder zeros
-          base: header, activity, community, repositories
-          
-          # --- LINGUAGENS  ---
+          # --- LINGUAGENS ---
           plugin_languages: yes
           plugin_languages_limit: 12
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_ignored: html, css, tex, shader
           
           # --- GRÁFICO 3D ---
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-          # --- PREVENÇÃO DE ERROS E TIMEOUTS ---
+          # --- PREVENÇÃO DE ERROS ---
           retries: 3
           retries_delay: 300
 
