@@ -21,24 +21,18 @@ jobs:
           filename: github-metrics.svg
           config_timezone: Europe/Lisbon
           
-          # --- ESTATÍSTICAS BÁSICAS (Topo) ---
-          # Mostra: Stars, Seguidores, Forks e Repositórios
+          # --- ESTATÍSTICAS BÁSICAS ---
           base: header, community, repositories
           
-          # --- LINGUAGENS (O Mais Usado) ---
+          # --- LINGUAGENS  ---
           plugin_languages: yes
-          plugin_languages_limit: 8           # Apenas as 8 principais
+          plugin_languages_limit: 8          
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_ignored: html, css # Ignora linguagens de marcação se preferires
           
-          # --- TOTAL DE LINHAS DE CÓDIGO ---
-          plugin_lines: yes
-          
-          # --- CONQUISTAS (Opcional, mas ocupa pouco espaço) ---
+          # --- CONQUISTAS ---
           plugin_achievements: yes
           plugin_achievements_display: compact
           
-          # Prevenção de timeouts
           retries: 3
           retries_delay: 300
